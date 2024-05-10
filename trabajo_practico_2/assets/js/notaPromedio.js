@@ -23,30 +23,21 @@ if (
 ) {
   console.log("Por favor, ingrese solo números entre 0 y 10.");
 } else {
-  switch (promedio) {
-    case 1:
-    case 2:
-    case 3:
-      console.log(
-        `el promedio de las notas es: ${promedio} - NOTA INSUFICIENTE`
-      );
-      break;
-    case 4:
-    case 5:
-      console.log(`el promedio de las notas es: ${promedio} - NOTA REGULAR`);
-      break;
-    case 6:
-    case 7:
-      console.log(`el promedio de las notas es: ${promedio} - NOTA BUENA`);
-      break;
-    case 8:
-    case 9:
-      console.log(`el promedio de las notas es: ${promedio} - NOTA MUY BUENA`);
-      break;
-    case 10:
-      console.log(
-        `el promedio de las notas es: ${promedio} - NOTA SOBRESALIENTE`
-      );
-      break;
-  }
+switch (true) {
+    case promedio >= 1 && promedio <= 3:
+        console.log(`el promedio de las notas es: ${promedio} - NOTA INSUFICIENTE`);
+        break;
+    case promedio >= 4 && promedio <= 5:
+        console.log(`el promedio de las notas es: ${promedio} - NOTA REGULAR`);
+        break;
+    case promedio >= 6 && promedio <= 7:
+        console.log(`el promedio de las notas es: ${promedio} - NOTA BUENA`);
+        break;
+    case promedio >= 8 && promedio <= 9:
+        console.log(`el promedio de las notas es: ${promedio} - NOTA MUY BUENA`);
+        break;
+    default:
+        console.log(`el promedio de las notas es: ${promedio} - NOTA SOBRESALIENTE`);
+        break;
+}
 }
