@@ -17,7 +17,7 @@ if (
 } else if (cantArticulos < 0 || precioArticulo < 0) {
   console.log("Por favor, ingrese solo números positivos.");
 } else if (cantArticulos > 1) {
-  if (cantArticulos > 10) {
+  if (cantArticulos > 10 && precioFinal > 20000) {
     console.log(
       `El precio total de ${cantArticulos} ${articulo}s es de $${totalPrecio} | Se aplicó un descuento del 15% | El precio final es de $${precioFinal}`
     );
